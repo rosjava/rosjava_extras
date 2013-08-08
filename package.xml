@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+  <name>rosjava_extras</name>
+  <version>0.0.0</version>
+  <description>
+    Extra packages for rosjava_core
+  </description>
+  <url>http://ros.org/wiki/rosjava_extras</url>
+  <maintainer email="damonkohler@google.com">Damon Kohler</maintainer>
+  <license>Apache 2.0</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rosjava_core</build_depend>
+  <build_depend>rosjava_tools</build_depend>
+</package>
+
