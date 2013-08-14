@@ -1,12 +1,12 @@
 /*
  * Copyright (C) 2011 Google Inc.
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
  * the License at
- * 
+ *
  * http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
@@ -14,18 +14,18 @@
  * the License.
  */
 
-package org.ros.android.hokuyo.scip20;
+package com.github.ros_java.rosjava_extras.hokuyo.scip20;
 
 /**
  * @author damonkohler@google.com (Damon Kohler)
- * 
+ *
  */
 public class MdmsException extends RuntimeException {
 
   public MdmsException(String status) {
     super(getMessage(status));
   }
-  
+
   private static String getMessage(String status) {
     if (status.equals("0A")) {
       return "Unable to create transmission data or reply command internally.";
@@ -81,7 +81,7 @@ public class MdmsException extends RuntimeException {
     if (status.equals("98")) {
       return "Resumption of process after confirming normal laser operation.";
     }
-    
+
     int value = Integer.valueOf(status);
     if (value > 20 && value < 50) {
       return "Processing stopped to verify the error.";
@@ -89,8 +89,8 @@ public class MdmsException extends RuntimeException {
     if (value > 49 && value < 98) {
       return "Hardware trouble (such as laser, motor malfunctions etc.).";
     }
-    
+
     return "Unknown status code: " + status;
   }
-  
+
 }

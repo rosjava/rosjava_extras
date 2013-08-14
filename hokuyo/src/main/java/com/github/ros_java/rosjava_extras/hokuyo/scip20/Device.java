@@ -1,12 +1,12 @@
 /*
  * Copyright (C) 2011 Google Inc.
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
  * the License at
- * 
+ *
  * http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
@@ -14,14 +14,14 @@
  * the License.
  */
 
-package org.ros.android.hokuyo.scip20;
+package com.github.ros_java.rosjava_extras.hokuyo.scip20;
 
 import com.google.common.base.Preconditions;
 
-import org.ros.android.hokuyo.LaserScan;
-import org.ros.android.hokuyo.LaserScanListener;
-import org.ros.android.hokuyo.LaserScannerConfiguration;
-import org.ros.android.hokuyo.LaserScannerDevice;
+import com.github.ros_java.rosjava_extras.hokuyo.LaserScan;
+import com.github.ros_java.rosjava_extras.hokuyo.LaserScanListener;
+import com.github.ros_java.rosjava_extras.hokuyo.LaserScannerConfiguration;
+import com.github.ros_java.rosjava_extras.hokuyo.LaserScannerDevice;
 
 
 import org.apache.commons.logging.Log;
@@ -69,7 +69,7 @@ public class Device implements LaserScannerDevice {
   /**
    * It is not necessary to provide buffered streams. Buffering is handled
    * internally.
-   * 
+   *
    * @param inputStream
    *          the {@link InputStream} for the ACM serial device
    * @param outputStream
