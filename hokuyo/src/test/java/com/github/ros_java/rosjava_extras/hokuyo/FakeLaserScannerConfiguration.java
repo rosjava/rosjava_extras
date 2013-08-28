@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.github.ros_java.rosjava_extras.hokuyo;
+package com.github.rosjava.rosjava_extras.hokuyo;
 
 /**
  * @author moesenle@google.com (Lorenz Moesenlechner)

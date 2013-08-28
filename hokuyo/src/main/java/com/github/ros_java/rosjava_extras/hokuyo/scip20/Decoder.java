@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.github.ros_java.rosjava_extras.hokuyo.scip20;
+package com.github.rosjava.rosjava_extras.hokuyo.scip20;
 
 import com.google.common.base.Preconditions;
 
