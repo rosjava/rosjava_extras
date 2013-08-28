@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.github.ros_java.rosjava_extras.hokuyo.scip20;
+package com.github.rosjava.rosjava_extras.hokuyo.scip20;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
