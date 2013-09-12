@@ -14,26 +14,33 @@
  * the License.
  */
 
-task wrapper(type: Wrapper) {
-  gradleVersion = '1.5'
+buildscript {
+    def rosMavenPath = "$System.env.ROS_MAVEN_PATH".split(':').collect { 'file://' + it }
+    repositories {
+        rosMavenPath.each { p ->
+            maven {
+                url p
+            }
+        }
+        mavenLocal()
+        maven {
+            url 'https://github.com/rosjava/rosjava_mvn_repo/raw/master'
+        }
+    }
+    dependencies {
+        classpath group: 'org.ros.rosjava_bootstrap', name: 'gradle_plugins', version: '0.1.+'
+    }
 }
 
 allprojects {
-  group 'com.github.rosjava.rosjava_extras'
-  version = '0.0.0-SNAPSHOT'
-  apply plugin: 'java'
-  apply plugin: 'maven'
-
-  sourceCompatibility = 1.6
-  targetCompatibility = 1.6
-
-  repositories {
-    mavenLocal()
-    maven {
-      url 'https://github.com/rosjava/rosjava_mvn_repo/raw/master'
-    }
-  }
+    group 'org.ros.rosjava_extras'
+    version = '0.1.0'
 }
 
-defaultTasks 'install'
+subprojects {
+    apply plugin: 'ros'
+    apply plugin: 'ros-java'
+}
+
+defaultTasks 'uploadArchives'
 
