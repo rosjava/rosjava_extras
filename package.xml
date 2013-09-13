@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>rosjava_extras</name>
-  <version>0.0.0</version>
+  <version>0.1.0</version>
   <description>
     Extra packages for rosjava_core
   </description>
@@ -14,6 +14,6 @@
 
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>rosjava_core</build_depend>
-  <build_depend>rosjava_tools</build_depend>
+  <build_depend>rosjava_build_tools</build_depend>
 </package>
 
