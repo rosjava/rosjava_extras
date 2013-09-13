@@ -32,9 +32,11 @@ buildscript {
     }
 }
 
+apply plugin: 'catkin'
+
 allprojects {
     group 'org.ros.rosjava_extras'
-    version = '0.1.0'
+    version = project.catkin.pkg.version
 }
 
 subprojects {
