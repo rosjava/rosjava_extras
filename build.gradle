@@ -39,7 +39,7 @@ buildscript {
 apply plugin: 'catkin'
 
 allprojects {
-    group 'org.ros.rosjava_extras'
+    group 'com.github.rosjava.rosjava_extras'
     version = project.catkin.pkg.version
 }
 
