@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>rosjava_extras</name>
-  <version>0.1.5</version>
+  <version>0.2.0</version>
   <description>
     Extra packages for rosjava_core
   </description>
@@ -16,8 +16,11 @@
   <build_depend>rosjava_core</build_depend>
   <build_depend>rosjava_build_tools</build_depend>
   <build_depend>rosjava_bootstrap</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+
   <run_depend>rosjava_core</run_depend>
   <run_depend>rosjava_build_tools</run_depend>
   <run_depend>rosjava_bootstrap</run_depend>
+  <run_depend>sensor_msgs</run_depend>
 </package>
 
