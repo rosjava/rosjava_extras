@@ -3,3 +3,4 @@ build
 .idea
 *.iml
 /bin
+/local.properties
