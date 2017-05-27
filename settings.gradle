@@ -1,2 +1,3 @@
 include 'hokuyo'
 include 'image'
+include 'cv_bridge_javacv'
