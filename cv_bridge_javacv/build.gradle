@@ -1,0 +1,34 @@
+/**
+ *
+ * @author tal.regev@gmail.com (Tal Regev)
+ *
+ */
+
+//noinspection GroovyAssignabilityCheck
+dependencies {
+    compile "org.ros.rosjava_core:rosjava:[0.3,0.4)"
+    compile "org.ros.rosjava_messages:sensor_msgs:[1.12,1.13)"
+
+    //from https://github.com/bytedeco/javacv/issues/126
+    //from http://central.maven.org/maven2/org/bytedeco/javacpp-presets/opencv/
+    compile group: "org.bytedeco.javacpp-presets", name: "opencv", version: "3.2.0" + "-1.3"
+    compile group: "org.bytedeco.javacpp-presets", name: "opencv", version: "3.2.0" + "-1.3", classifier: "android-arm"
+
+    compile project(":image")
+}
+
+//from https://github.com/bytedeco/javacv/issues/395
+//noinspection GroovyAssignabilityCheck
+configurations {
+    all*.exclude group: "org.bytedeco", module: "javacpp-presets"
+}
+
+// Change the layout of Android projects to be compatible with Eclipse.
+//noinspection GroovyAssignabilityCheck
+sourceSets {
+    //noinspection GroovyAssignabilityCheck
+    main {
+        java.srcDirs "src"
+        resources.srcDirs "res"
+    }
+}
