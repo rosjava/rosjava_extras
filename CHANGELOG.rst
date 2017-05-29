@@ -1,8 +1,8 @@
 Changelog
 =========
 
-Forthcoming
------------
+0.3.2 (2017-05-29)
+------------------
 * add cv_bridge_javacv (java library).
 * Contributors: talregev
 
