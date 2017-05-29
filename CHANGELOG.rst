@@ -1,6 +1,11 @@
 Changelog
 =========
 
+Forthcoming
+-----------
+* add cv_bridge_javacv (java library).
+* Contributors: talregev
+
 0.3.1 (2017-02-22)
 ------------------
 * Add image submodule
