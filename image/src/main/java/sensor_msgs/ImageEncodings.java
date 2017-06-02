@@ -1,4 +1,4 @@
-package com.github.rosjava.rosjava_extras.sensor_msgs;
+package sensor_msgs;
 
 /**
  *
