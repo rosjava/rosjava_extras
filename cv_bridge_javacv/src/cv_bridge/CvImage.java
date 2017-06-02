@@ -16,7 +16,7 @@ import java.util.Vector;
 
 import sensor_msgs.CompressedImage;
 import sensor_msgs.Image;
-import com.github.rosjava.rosjava_extras.sensor_msgs.ImageEncodings;
+import sensor_msgs.ImageEncodings;
 import std_msgs.Header;
 
 /**

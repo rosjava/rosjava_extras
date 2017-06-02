@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Vector;
 
-import com.github.rosjava.rosjava_extras.sensor_msgs.ImageEncodings;
+import sensor_msgs.ImageEncodings;
 
 /**
  *
