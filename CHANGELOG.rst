@@ -1,8 +1,8 @@
 Changelog
 =========
 
-Forthcoming
------------
+0.3.3 (2017-06-15)
+------------------
 * move ImageEncodings class to sensor_msgs package. Makes it more similar to c++ and intuitive to use.
 * Contributors: Julian Cerruti, talregev
 
