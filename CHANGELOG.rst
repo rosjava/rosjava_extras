@@ -1,6 +1,11 @@
 Changelog
 =========
 
+Forthcoming
+-----------
+* move ImageEncodings class to sensor_msgs package. Makes it more similar to c++ and intuitive to use.
+* Contributors: Julian Cerruti, talregev
+
 0.3.2 (2017-05-29)
 ------------------
 * add cv_bridge_javacv (java library).
