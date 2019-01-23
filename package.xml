@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>rosjava_extras</name>
-  <version>0.3.3</version>
+  <version>0.3.4</version>
   <description>
     Extra packages for rosjava_core
   </description>

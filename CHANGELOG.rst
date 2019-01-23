@@ -1,8 +1,8 @@
 Changelog
 =========
 
-Forthcoming
------------
+0.3.4 (2019-01-23)
+------------------
 * Upgrading Gradle version to 4.10.2.
 * Contributors: Juan Ignacio Ubeira
 
